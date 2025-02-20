@@ -1,1 +1,1 @@
-# netflix-clone
+# netflix-clone only css and html
