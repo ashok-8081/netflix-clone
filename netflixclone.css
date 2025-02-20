@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poopins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(assets/background.jpg);
+  height: 70vh;
+  position: relative;
+  background-position: center center;
+  background-size: max(
+    1000px,
+    100vw
+  ); /*iska matlab hai isme se jo bada hoga wo*/
+  background-repeat: no-repeat;
+}
+.main .box {
+  font-family: "Martel Sans", sans-serif;
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.69;
+  background-color: black;
+}
+nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 94px;
+}
+nav img {
+  filter: invert(18%) sepia(100%) saturate(7486%) hue-rotate(-3deg)
+    brightness(93%) contrast(108%);
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  color: white;
+  position: relative;
+  height: calc(
+    100% - 99px
+  ); /* it calculates the height and adjust accordingly*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.hero > :nth-child(1) {
+  /*greater than symbol ka matlab hai nth child ka 1st child select karna hai aur immediate wala*/
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.separation {
+  height: 7px;
+  background-color: rgb(57, 56, 56);
+  z-index: 20;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.051);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+.main input {
+  padding: 7px 105px 8px 14px;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.3);
+  border: 1px solid rgba(99, 91, 91, 0.5);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  margin-top: 2px;
+  
+}
+@media screen and (max-width: 1074px) {
+  .first{
+    flex-wrap: wrap;
+  }
+}
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+.first > div :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.first > div :nth-child(2) {
+  font-size: 24px;
+  /* font-weight: bolder; */
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+.faq h2 {
+  display: flex;
+  padding: 24px;
+  text-align: left;
+  /* background-color: red; */
+  max-width: 83vw;
+  margin: 8px auto;
+  font-size: 48px;
+  font-weight: 400;
+}
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.374);
+  padding: 20px;
+  max-width: 80vw;
+  margin: 8px auto;
+  cursor: pointer;
+}
+.faqbox svg{
+  filter: invert(1);
+}
+.faqbox:hover{
+  background-color: #414141;
+}
+footer{
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 14px;
+}
+footer .questions{
+  padding: 34px 0;
+}
+@media screen and (max-width: 1074px){
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.footer a{
+  /* text-decoration: none; */
+  font-size: 14px;
+  color: white;
+}
